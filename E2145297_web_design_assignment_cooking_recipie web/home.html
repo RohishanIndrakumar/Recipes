@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+    <style>
+        *
+        {
+            overflow-x: hidden;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        .m1
+        {
+            text-align: center;
+            font-size: 70px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: 700;
+            padding-top: 50px;
+        }
+        .next
+        {
+            background-color: black;
+            
+            width: 250px;
+            height: 150px;
+          
+            position: relative;
+            top: 100px;
+            right: -45%;
+            border-radius: 50px;
+           
+        }
+        .next a
+        {
+            position: absolute;
+            left: 26%;
+            top: 40%;
+            text-decoration: none;
+            color: white;
+            text-align: center;
+            font-size: 30px;
+            
+        }
+        
+        .next:hover
+        {
+            border-radius: 50%;
+            background-color: rgb(255, 255, 255);
+            color: rgba(0, 0, 0, 0.661);
+            transition: 0.5s;
+            cursor: pointer;
+        }
+        .next a:hover
+        {
+            color: black;
+        }
+        a,li{
+            text-decoration: none;
+            list-style-type: none;
+        }
+        .bg1
+        {
+            background-image: url("./assests/bg2.jpg"); 
+            background-size: cover;
+            width: 100vw;
+            height: 100vh;
+            
+        }
+        .h1t
+        {
+            text-shadow: 5px 5px 5px black;
+            color: white;
+            text-align: center; 
+            font-size: 7rem;
+            margin-top: 20px;
+            padding: 15px;
+            padding-top: 40px;
+            font-family: 'Sedgwick Ave Display', cursive;
+            letter-spacing: normal;
+        }
+       .h1t:hover{
+        color: red;
+        transition: 1s; 
+        cursor: pointer;
+    
+       }
+       .nav1
+       {    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+       }
+       .ul1{
+        display: flex;
+        gap: 30px;
+       }
+       .ul1 a{
+        color: black;
+       }
+        
+        nav {
+          text-align: center;
+          font-size: 35px;
+        }
+    
+        
+      
+             
+            
+           
+            
+            .bg2
+            {
+                background-color: white;
+                width: 100vw;
+                height: auto;
+            }
+            .card
+                {
+                    background-color: rgb(255, 255, 255);
+                    width: 320px;
+                    height: 600px;
+                    border-radius: 40px;
+                    padding-left: 10px;
+                    padding-top: 10px;
+                    padding-bottom: 40px;
+                    margin: 40px;
+                    margin-left: 30%;
+                    box-shadow: -3px -3px  7px black,inset -1px 1px  7px black;
+                    position: relative;
+                
+                }
+            .img1
+            {
+                 background-image: url("./assests/briyani.jpeg");
+                 width: 300px;
+                 height: 300px;
+                background-size:cover ;
+                border-radius: 30px;
+                padding: 10px;
+                 box-shadow: inset -2px -2px 5px  rgb(206,195,182);
+            }
+            .img2
+            {
+                 background-image: url("./assests/ramen.jpg");
+                 width: 300px;
+                 height: 300px;
+                background-size:cover ;
+                border-radius: 30px;
+                padding: 10px;
+                 box-shadow: inset -2px -2px 5px  rgb(206,195,182);
+            }
+            .img3
+            {
+                 background-image: url("./assests/paani.jpg");
+                 width: 300px;
+                 height: 300px;
+                background-size:cover ;
+                border-radius: 30px;
+                padding: 10px;
+                 box-shadow: inset -2px -2px 5px  rgb(206,195,182);
+            }
+            .img4
+            {
+                 background-image: url("./assests/chcake.jpg");
+                 width: 300px;
+                 height: 300px;
+                background-size:cover ;
+                border-radius: 30px;
+                padding: 10px;
+                 box-shadow: inset -2px -2px 5px  rgb(206,195,182);
+            }
+            .title2 h4{
+                padding: 3px; 
+                font-family: serif;
+                font-size: 20px;
+                font-weight: 800;
+                text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.567);
+            }
+
+            .discription p{
+
+                font-family: 'Courier New', Courier, monospace;
+                font-weight: 900;
+                color: rgba(0, 0, 0, 0.526);
+                
+                
+           
+            }
+            
+            
+            .under span a
+            {
+                padding: 7px;
+                margin-left: 65px;
+                font-family: serif;
+                margin-top: 8px;
+                color:whitesmoke;
+               background-color: black;
+               border-radius: 10px;
+               position: absolute;
+               bottom: 20px;
+               left: 50%;
+            }
+            .under span a:hover
+            {
+                background-color: rgba(0, 0, 0, 0.508);
+            }
+            
+            .display
+            {
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                gap: 20px;
+            }
+            .bg3
+            {
+                width: 100vw;
+                height: auto;
+                background-color: rgb(244, 244, 234);
+            }
+            .h1t2{
+                text-align: center;
+                padding-top: 30px;
+                font-size: 60px;
+                text-rendering: optimizeLegibility;
+            }
+            .card2{
+                width: 700px;
+                height: auto;
+                background-color: rgb(217, 227, 227);
+                margin-left: 100px;
+                margin-top: 40px;
+                padding: 10px;
+                border-radius: 10px;
+                box-shadow: 2px 2px 5px black;
+            }
+            .img01{
+                background-image: url("./assests/briyani.jpeg");
+                width: 680px;
+                height: 400px;
+                background-size: cover;
+                border-radius: 10px;
+                box-shadow: inset 0 0 5px white;
+                background-position:center;
+            }
+            .img02
+            {
+                background-image: url("./assests/ramen.jpg");
+                width: 680px;
+                height: 400px;
+                background-size: cover;
+                border-radius: 10px;
+                box-shadow: inset 0 0 5px white;
+            }
+            .img03
+            {
+                background-image: url("./assests/paani.jpg");
+                width: 680px;
+                height: 400px;
+                background-size: cover;
+                border-radius: 10px;
+                box-shadow: inset 0 0 5px white;
+                background-position:center;
+                
+            }
+            .img04
+            {
+                background-image: url("./assests/chcake.jpg");
+                width: 680px;
+                height: 400px;
+                background-size: cover;
+                border-radius: 10px;
+                box-shadow: inset 0 0 5px white;
+                background-position:center;
+                
+            }
+            .title01{
+                padding: 10px;
+                font-size: 40px;
+                text-align: center;
+            }
+            .discription01 p{
+                font-family: 'Times New Roman', Times, serif;
+                text-align: justify;
+                padding: 5px;
+                background-color: aliceblue;
+                border-radius: 10px;
+            }
+            .ingrid{
+                display: flex;
+                background-color: aliceblue;
+                border-radius: 10px;
+                padding: 10px;
+            }
+            .ingrid ul li {
+                font-family: serif;
+                font-weight: 600;
+            }
+            .display2{
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                margin-right:20px;
+            }
+            .b2h
+            {
+                text-align: center;
+                font-size: medium;
+                display: inline;
+                margin-left: 95%;
+                text-wrap: nowrap;
+                padding-bottom: 35px;
+                
+                
+            }
+            .b2h1
+            {
+                text-align: center;
+                font-size: medium;
+            }
+            .ing1
+            {
+                font-size: 20px;
+            }
+            .bg4
+            {
+                background-color: white;
+                width: 100vw;
+                height: 100vh;
+            }
+                .card3{
+                    width: 400px;
+                    height: 500px;
+                    margin: auto;
+                    margin-top: 200px;
+                    background-color: rgb(240, 248, 255);
+                    font-family: serif;
+                    box-shadow: inset -1px -1px 15px black;
+                }
+                .card3 input,.card3 button{
+                    display: block;
+                    margin: auto;
+                    font-family: serif;
+                }
+                fieldset{
+                    height: 500px;
+                    border-radius: 20px;
+                    border: 2cap;
+                    
+                }
+                input[type="text"] {
+                    color: black;
+                    text-align: center;
+
+                }
+                #name{
+                    width: 250px;
+                    height: 50px;
+                    border: none;
+                    border-radius: 20px;
+                    position: relative;
+                    top: 20%;
+                }
+                #Message{
+                    position: relative;
+                    width: 250px;
+                    height: 50px;
+                    border: none;
+                    border-radius: 20px;
+                    top: 25%;
+
+                }
+
+                .card3 button{
+                    position: relative;
+                    top: 35%;
+                    width: 100px;
+                    height: 50px;
+                    border-radius: 25px;
+                    border: none;
+                    background-color: rgba(0, 0, 0, 0.362);
+                    color: aliceblue;
+                    font-size: 20px;
+                    font-family: 'Courier New', Courier, monospace;
+                }
+                .card3 button:hover{
+                    background-color: rgba(0, 0, 0, 0.777);
+                    color: white;
+                    cursor: pointer;
+                    transition: 0.5s;
+                }
+                #Message::placeholder{
+                    text-align: center;
+                }
+                #name::placeholder{
+                    text-align: center;
+
+            }
+            
+      </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+<body>
+    <nav class="nav1">
+      <h1>RY recipes</h1>
+       <ul class="ul1">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#recipe">Recipes</a></li>
+        <li><a href="#contact">Contact</a></li>
+        
+       </ul>
+      
+    </nav>
+
+   
+   
+<div class="bg1" id="Home">
+    <h1 class="h1t"> RY Cooking and Recipes </h1>
+   <div class="next"><a href="#menu">Let's Cook</a></div>
+</div>
+<div class="bg2" id="menu">
+    <h1 class="m1">Menus</h1>
+    <div class="display">
+        <div class="card">
+            <div class="img1"></div>
+            <div class="title2">
+     
+                <h4>Briyani</h4>
+            
+    
+                <div class="discription">
+                    <p>There are various regional variations of Biryani, each with its unique taste and preparation method. Some well-known types of Biryani include Hyderabadi Biryani, Lucknowi or Awadhi Biryani, Kolkata Biryani, and Malabar Biryani.</p>
+                </div>
+                <div class="under">
+                    
+                    <span><a href="#Briyani">see recipe</a></span>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img2"></div>
+            <div class="title2">
+     
+                <h4>Ramen</h4>
+            
+    
+                <div class="discription">
+                    <p> Ramen is a Japanese dish that consists of Chinese-style wheat noodles served in a meat or fish-based broth, often flavored with soy sauce or miso, and topped with ingredients like sliced pork, dried seaweed, green onions, and sometimes corn or boiled eggs. </p>
+                </div>
+                <div class="under">
+                    
+                    <span><a href="#Ramen">see recipe</a></span>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img3"></div>
+            <div class="title2">
+     
+                <h4>Paani Puri</h4>
+            
+    
+                <div class="discription">
+                    <p> Pani Puri, also known as Golgappa in some regions of India, is a popular street food snack. consists of small, round, crispy puris filled with a mixture of spicy, tangy, and sweet flavored water, along with other ingredients. </p>
+                </div>
+                <div class="under">
+                    
+                    <span><a href="#Paanipuri">see recipe</a></span>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img4"></div>
+            <div class="title2">
+     
+                <h4>Chocolate Cake</h4>
+            
+    
+                <div class="discription">
+                    <p> Whether it's a simple homemade cake or a show-stopping layered creation, chocolate cake is a versatile and delightful dessert that satisfies chocolate cravings and is perfect for various occasions. </p>
+                </div>
+                <div class="under">
+                   
+                    <span><a href="#chocolatecake">see recipe</a></span>
+                   
+                </div>
+            </div>
+        </div>
+        <p class="b2h"><a href="#Home">Back to Home</a></p>
+        
+    </div>
+</div>
+<div class="bg3" id="recipe">
+    <h1 class="h1t2">Recipes</h1>
+    <div class="display2">
+        <div class="card2" id="Briyani">
+            <div class="img01"></div>
+                <div class="title01">
+                    <h4> Briyani</h4>
+                </div>
+                    <div class="discription01">
+                        <P ><span style="font-weight: bolder;">Instructions:</span><br>
+
+                            1. Marinate the chicken with yogurt, red chili powder, turmeric powder, and salt. Let it marinate for at least 1-2 hours.<br>
+                            
+                            2 In a large pot, heat oil or ghee. Add sliced onions and fry until golden brown. Remove half of the fried onions for garnishing.
+                            <br>
+                            
+                            3 Add ginger-garlic paste to the remaining onions in the pot and sauté until the raw smell disappears.<br>
+                            
+                            4 Add chopped tomatoes, biryani masala, and green chilies. Cook until the tomatoes are soft.<br>
+                            
+                            5 Add marinated chicken to the pot and cook until the chicken is partially cooked.<br>
+                            
+                           6  Meanwhile, parboil the soaked basmati rice with some whole spices until it's 70-80% cooked. Drain the water.<br>
+                            
+                            7 Layer the partially cooked chicken with mint leaves, coriander leaves, and half of the fried onions.<br>
+                            
+                            8 Top the chicken layer with the parboiled rice. Sprinkle some biryani masala, mint leaves, coriander leaves, and the remaining fried onions.
+                            <br>
+                            9 Mix saffron strands in warm milk and drizzle it over the rice for a fragrant and colorful touch.<br>
+                            
+                           10  Cover the pot with a tight-fitting lid or seal it with dough to trap the steam.<br>
+                            
+                           11  Cook on low heat for about 25-30 minutes or until the chicken is fully cooked, and the rice is tender.<br>
+                            
+                            12 Gently fluff the biryani with a fork, ensuring not to break the rice grains.<br>
+                            
+                            13 Serve the flavorful Hyderabad Chicken Biryani hot with raita or a side salad. Enjoy your delicious homemade biryani!</P>
+
+                            <div class="ingrid">
+                                <ul>
+                                    <h5>ingridients :</h5>
+                                    <li>1 kg chicken, cleaned and cut into pieces
+                                    </li>
+                                    <li>1 cup yogur</li>
+                                    <li>4 large onions, thinly sliced</li>
+                                    <li>4 tomatoes, chopped</li>
+                                    <li>1/2 cup cooking oil or ghee</li>
+                                    <li>2 tablespoons biryani masala</li>
+                                    <li>2 tablespoons ginger-garlic paste</li>
+                                    <li>1 bunch fresh mint leaves</li>
+                                    <li>1 bunch fresh coriander leaves</li>
+                                    <li>4-5 green chilies, chopped</li>
+                                    <li>Whole spices (bay leaves, cardamom, cinnamon, cloves)</li>
+                                    <li>Salt to taste</li>
+                                    </ul>
+                                    <ul>
+                                        <h5>For Marination:</h5>
+                                        <li>1 cup yogurt</li>
+                                        <li>1 tablespoon red chili powder</li>
+                                        <li>1/2 teaspoon turmeric powder</li>
+                                        <li>Salt to taste</li>
+                                    </ul>
+                            </div>
+
+                    </div>
+               
+        </div>
+        <div class="card2" id="Ramen">
+            <div class="img02"></div>
+                <div class="title01">
+                    <h4>Ramen</h4>
+                </div>
+                    <div class="discription01">
+                        <P ><span style="font-weight: bolder;">Instructions:</span><br>
+                          
+
+                                1. Prepare the Broth: <br>
+                                In a large pot, combine chicken broth, water, chicken breasts, onion, carrots, celery, garlic, ginger, soy sauce, mirin, salt, and pepper. <br>
+                                Bring to a boil, then reduce heat and simmer for about 20-30 minutes until the chicken is cooked through and the flavors meld. <br>
+                                2. Cook the Chicken: <br>
+                                Remove the chicken breasts from the broth and shred them using two forks. Set aside. <br>
+                                3. Strain the Broth:<br>
+                                Strain the broth to remove the solids, leaving a clear and flavorful broth. Discard the solids.<br>
+                                4. Cook the Ramen Noodles:<br>
+                                Cook the ramen noodles according to the package instructions. Drain and rinse under cold water to stop the cooking process.<br>
+                                5. Assemble the Ramen:<br>
+                                Divide the cooked ramen noodles among serving bowls.<br>
+                                Pour the hot broth over the noodles.<br>
+                                Add shredded chicken, chopped bok choy, and sliced green onions.<br>
+
+                                6. Optional Toppings:<br>
+                                Drizzle with sesame oil for extra flavor.<br>
+                                Top with soft-boiled eggs, sliced nori, and red pepper flakes if desired.<br>
+
+                                7. Serve:<br>
+                                Serve the chicken ramen hot and enjoy!<br>
+
+                                Feel free to customize your ramen with additional toppings like mushrooms, bean sprouts, or any other vegetables you enjoy. Adjust the seasoning to your taste, and you'll have a delicious bowl of homemade chicken ramen.<br>
+
+
+                           </P>
+
+                            <div class="ingrid">
+                                <ul>
+                                    <h5 class="ing1">ingridients :</h5>
+                                    <h5>For the Broth :</h5>
+                                    <li>4 cups chicken broth
+                                    </li>
+                                    <li>4 cups water</li>
+                                    <li>2 boneless, skinless chicken breasts</li>
+                                    <li>1 onion, halved</li>
+                                    <li>2 carrots, chopped</li>
+                                    <li>2 celery stalks, chopped</li>
+                                    <li>4 cloves garlic, minced</li>
+                                    <li>1 inch ginger, sliced</li>
+                                    <li>1/4 cup soy sauce</li>
+                                    <li>2 tablespoons mirin (sweet rice wine) or rice vinegar</li>
+                                    <li>Salt and pepper to taste</li>
+                                    
+                                    </ul>
+                                    <ul>
+                                        <h5>For the Ramen:</h5>
+                                        <li>4 packs of ramen noodles (discard the seasoning packets)</li>
+                                        <li>Bok choy, chopped</li>
+                                        <li>Green onions, sliced</li>
+                                        <li>Soft-boiled eggs (optional)</li>
+                                        <li>Sesame oil (for drizzling)</li>
+                                        <li>Nori (seaweed sheets), sliced (optional)</li>
+                                        <li>Red pepper flakes (optional)</li>
+                                    </ul>
+                            </div>
+
+                    </div>
+               
+        </div>
+        <div class="card2" id="Pani Puri">
+            <div class="img03"></div>
+                <div class="title01">
+                    <h4>Pani Puri</h4>
+                </div>
+                    <div class="discription01">
+                        <P ><span style="font-weight: bolder;">Instructions:</span><br>
+                            Making the Puris: <br>
+                                1. Mix semolina and all-purpose flour in a bowl.<br>
+                                2. Add water gradually and knead into a stiff but smooth dough.<br>
+                                3. Cover the dough with a damp cloth and let it rest for 15-20 minutes.<br>
+                                4. Take small portions of the dough and roll them into small balls.<br>
+                                5. Roll out each ball into a small disc (approximately 2 inches in diameter).<br>
+                                6. Heat oil in a pan for deep frying. Fry the rolled discs until they puff up and turn golden brown.<br>
+                                7. Remove the puris from the oil and let them cool.<br>
+
+                                Making the Pani (Spiced Water):<br>
+                                1. In a blender, combine mint leaves, coriander leaves, green chilies, and ginger. Blend into a smooth paste.<br>
+                                2. Strain the paste to extract the juice. You can use a fine mesh strainer or cheesecloth.<br>
+                                3. In a bowl, mix the mint-coriander juice with cold water.<br>
+                                4. Add roasted cumin powder, black salt, chaat masala, lemon juice, and regular salt to the water. Adjust the quantities to your taste.<br>
+                                5. Chill the pani in the refrigerator for at least 30 minutes to let the flavors meld.<br>
+
+                                Assembling the Pani Puri:<br>
+                                1. Carefully make a small hole in the center of each puri.<br>
+                                2. Stuff each puri with a small amount of mashed potatoes and boiled chickpeas.<br>
+                                3. Optionally, add chopped onions, tamarind chutney, and boondi.<br>
+                                4. Dip each stuffed puri into the chilled pani just before eating.<br>
+                                5. Serve immediately and enjoy the burst of flavors!<br>
+
+                                Pani Puri is best enjoyed fresh and is a fun and interactive way to savor the diverse flavors of Indian street food. Adjust the spice levels and ingredients according to your preferences.<br>
+
+                        </P>
+
+                            <div class="ingrid">
+                                <ul>
+                                    <h5>For the Puris :</h5>
+                                    <li>1 cup semolina (sooji)
+                                    </li>
+                                    <li>1/4 cup all-purpose flour (maida)</li>
+                                    <li>Water for kneading</li>
+                                    <li>Oil for frying</li>
+                                    
+                                    </ul>
+                                    <ul>
+                                        <h5>For the Pani (Spiced Water) :</h5>
+                                        <li>1 cup fresh mint leaves
+                                        </li>
+                                        <li>1/2 cup fresh coriander leaves</li>
+                                        <li>2-3 green chilies <br> (adjust to taste)</li>
+                                        <li>1-inch piece of ginger</li>
+                                        <li>1 small lemon (juiced)</li>
+                                        <li>1 teaspoon roasted cumin powder</li>
+                                        <li>1 teaspoon black salt</li>
+                                        <li>1 teaspoon chaat masala</li>
+                                        <li>Salt to taste</li>
+                                        <li>2 cups cold water</li>
+                                        
+                                        </ul>
+                                    <ul>
+                                        <h5>For the Filling:</h5>
+                                        <li>1 cup boiled and mashed potatoes</li>
+                                        <li>1 cup boiled black chickpeas</li>
+                                        <li>Tamarind chutney (sweet and tangy tamarind sauce)</li>
+                                        <li>Chopped onions</li>
+                                        <li>Sev (thin gram flour noodles)</li>
+                                        <li>Optional: Boondi (tiny fried chickpea flour balls)</li>
+                                    </ul>
+                            </div>
+
+                    </div>
+               
+        </div>
+        <div class="card2" id="chocolatecake">
+            <div class="img04"></div>
+                <div class="title01">
+                    <h4>Chocolate Cake</h4>
+                </div>
+                    <div class="discription01">
+                        <P ><span style="font-weight: bolder;">Instructions:</span><br>
+                            Preheat your oven to 350°F (175°C). Grease and flour two 9-inch round cake pans. <br>
+
+                            In a large bowl, sift together the flour, cocoa powder, sugar, baking powder, baking soda, and salt.<br>
+
+                            Add eggs, milk, oil, and vanilla extract to the dry ingredients. Mix until well combined.<br>
+
+                            Gradually add boiling water to the batter, mixing well. The batter will be thin, but that's okay.<br>
+
+                            Pour the batter evenly into the prepared pans.<br>
+
+                            Bake in the preheated oven for 30 to 35 minutes or until a toothpick inserted into the center comes out clean.<br>
+
+                            Allow the cakes to cool in the pans for 10 minutes, then transfer them to a wire rack to cool completely.<br>
+
+                            <b>For the Chocolate Frosting:</b><br>
+
+                            In a large bowl, beat the softened butter until creamy.<br>
+
+                            Gradually add the powdered sugar and cocoa powder, alternating with milk. Beat until smooth and creamy.<br>
+
+                            Mix in the vanilla extract and a pinch of salt.<br>
+                            <b> Assembly:</b><br>
+
+                            Once the cakes are completely cool, spread a layer of chocolate frosting on top of one cake layer.<br>
+
+                            Place the second cake layer on top and frost the top and sides of the entire cake.<br>
+
+                            You can decorate the cake with additional frosting, chocolate shavings, or other toppings of your choice.<br>
+
+                            Slice and enjoy your homemade chocolate cake!<br>
+
+                            Feel free to customize the recipe to your liking, and have fun with the decoration!<br>
+
+
+                        </P>
+
+                            <div class="ingrid">
+                                <ul>
+                                    <h5>ingridients :</h5>
+                                    <li>1 and 3/4 cups all-purpose flour
+                                    </li>
+                                    <li>3/4 cup unsweetened cocoa <br> powder</li>
+                                    <li>2 cups granulated sugar</li>
+                                    <li>1 and 1/2 teaspoons baking <br> powder</li>
+                                    <li>1 and 1/2 teaspoons baking soda</li>
+                                    <li>1 teaspoon salt</li>
+                                    <li>2 large eggs</li>
+                                    <li>1 cup whole milk</li>
+                                    <li>1/2 cup vegetable oil</li>
+                                    <li>2 teaspoons pure vanilla extract</li>
+                                    <li1>cup boiling water</li>
+                                    <li>Salt to taste</li>
+                                    </ul>
+                                    <br>
+                                    <ul>
+                                        <h5>For the Chocolate Frosting :</h5>
+                                        <li>1 cup (2 sticks) unsalted butter, softened
+                                        </li>
+                                        <li>3 and 1/2 cups powdered sugar</li>
+                                        <li>1 cup unsweetened cocoa powder</li>
+                                        <li>1/2 cup whole milk</li>
+                                        <li>2 teaspoons pure vanilla extract</li>
+                                        <li>A pinch of salt</li>
+                                       
+                                        </ul>
+                                    
+                            </div>
+
+                    </div>
+               
+            </div>
+               
+    </div> 
+    <p class="b2h1"><a href="#Home">Back to Home</a></p>   
+
+</div>
+<div class="bg4">
+    
+            
+        <div class="display3">
+            <div class="card3" id="contact">
+                <form>
+                    <fieldset>
+                        <legend>contact info</legend>
+                        <input type="text" id="name" placeholder="enter your name">
+
+           
+                        <input type="text" id="Message" placeholder="enter the message">
+                        <button>Send</button>
+                    </fieldset>
+
+
+
+
+
+
+
+                </form>
+            </div>
+        </div>
+        <p class="b2h"><a href="#Home" style="position: relative; bottom: -50px; left: -47%;">Back to Home</a></p>
+</div>
+    
+</body>
+</html>
